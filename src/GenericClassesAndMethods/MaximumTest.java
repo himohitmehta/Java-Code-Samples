@@ -9,8 +9,8 @@ public class MaximumTest {
     }
 
     //determines the largest of three Comparable objects
-    public static Comparable maximum(Comparable x, Comparable y, Comparable z) {
-        Comparable max = x;//assume x is initially the largest
+    public static <T extends Comparable<T>> T maximum(T x, T y, T z) {
+        T max = x;//assume x is initially the largest
         if (y.compareTo(max) > 0) {
             max = y;// y is the largest so far
         }

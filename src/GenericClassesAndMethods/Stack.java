@@ -15,7 +15,7 @@ public class Stack<E> {
     //constructor creates a stack of the specified number of elements
     public Stack(int capacity) {
         int initCapacity = capacity > 0 ? capacity : 10;//validate
-        elements = new ArrayList<E>(initCapacity);//create ArrayList
+        elements = new ArrayList<>(initCapacity);//create ArrayList
     }
 
     //push element onto stack
