@@ -52,10 +52,10 @@ public class List<E> {
     public void insertAtFront(E insertItem) {
         if (isEmpty()) {
             //firstNode and lastNode refer to same object
-            firstNode = lastNode = new ListNode<E>(insertItem);
+            firstNode = lastNode = new ListNode<>(insertItem);
         } else {
             //firstNode refers to new node
-            firstNode = new ListNode<E>(insertItem, firstNode);
+            firstNode = new ListNode<>(insertItem, firstNode);
         }
     }
 
@@ -63,9 +63,9 @@ public class List<E> {
     public void insertAtBack(E insertItem) {
         if (isEmpty()) {
             //firstNode and lastNode refer to same object
-            firstNode = lastNode = new ListNode<E>(insertItem);
+            firstNode = lastNode = new ListNode<>(insertItem);
         } else {
-            lastNode = lastNode.nextNode = new ListNode<E>(insertItem);
+            lastNode = lastNode.nextNode = new ListNode<>(insertItem);
         }
     }
 

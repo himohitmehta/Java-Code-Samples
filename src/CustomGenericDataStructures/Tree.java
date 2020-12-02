@@ -21,7 +21,7 @@ class TreeNode<E extends Comparable<E>> {
         if (insertValue.compareTo(data) < 0) {
             //insert new TreeNode
             if (leftNode == null) {
-                leftNode = new TreeNode<E>(insertValue);
+                leftNode = new TreeNode<>(insertValue);
             } else {
                 //continue traversing left subtree recursively
                 leftNode.insert(insertValue);
@@ -31,7 +31,7 @@ class TreeNode<E extends Comparable<E>> {
         else if (insertValue.compareTo(data) > 0) {
             //insert new Tree Node
             if (rightNode == null) {
-                rightNode = new TreeNode<E>(insertValue);
+                rightNode = new TreeNode<>(insertValue);
             } else {
                 //continue traversing right subtree recursively
                 rightNode.insert(insertValue);
@@ -52,7 +52,7 @@ public class Tree<E extends Comparable<E>> {
     //insert a new node in the binary search tree
     public void insertNode(E insertValue) {
         if (root == null) {
-            root = new TreeNode<E>(insertValue);
+            root = new TreeNode<>(insertValue);
         } else {
             root.insert(insertValue);
         }

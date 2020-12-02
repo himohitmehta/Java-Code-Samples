@@ -7,7 +7,7 @@ public class Stack<E> {
 
     //constructor
     public Stack() {
-        stackList = new List<E>("stack");
+        stackList = new List<>("stack");
     }
 
     //add object to stack

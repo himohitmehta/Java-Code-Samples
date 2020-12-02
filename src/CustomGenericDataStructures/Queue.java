@@ -8,7 +8,7 @@ public class Queue<E> {
 
     //constructor
     public Queue() {
-        queueList = new List<E>("queue");
+        queueList = new List<>("queue");
     }
 
     //add object to queue

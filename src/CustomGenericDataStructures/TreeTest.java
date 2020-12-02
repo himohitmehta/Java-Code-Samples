@@ -5,7 +5,7 @@ import java.security.SecureRandom;
 //Binary tree test program
 public class TreeTest {
     public static void main(String[] args) {
-        Tree<Integer> tree = new Tree<Integer>();
+        Tree<Integer> tree = new Tree<>();
         SecureRandom randomNumbers = new SecureRandom();
         System.out.println("Inserting the following values: ");
         //insert 10 random numbers from 0-99 in tree
